@@ -41,13 +41,13 @@ class GcpHelpers < Inspec.resource(1)
         # If we weren't passed a specific list/array of zones/region names from
         # inputs, search everywhere
         @gke_locations = if gcp_gke_locations.join.empty?
-                           get_all_gcp_locations(gcp_project_id)
+                           get_all_gcp_locations
                          else
                            gcp_gke_locations
                          end
 
         # Loop/fetch/cache the names and locations of GKE clusters
-        collect_gke_clusters_by_location(gcp_project_id, @gke_locations)
+        collect_gke_clusters_by_location(gcp_gke_locations)
 
         # Mark the cache as full
         @gke_clusters_cached = true
