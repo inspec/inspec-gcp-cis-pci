@@ -1,0 +1,14 @@
+name: inspec-gcp
+title: GCP CIS PCI Helper Resource Pack
+maintainer: Chef Software, Inc.
+summary: This resource pack provides helpers for the Google Cloud Platform CIS PCI profiles.
+copyright: Chef Software, Inc.
+copyright_email: Chef Software, Inc.
+version: 1.0.0
+license: Apache-2.0
+inspec_version: '>= 4.7.3' 
+depends:
+- name: inspec-gcp
+  url: https://github.com/inspec/inspec-gcp/archive/master.tar.gz
+supports:
+- platform: gcp
