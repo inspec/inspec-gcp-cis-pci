@@ -1,4 +1,4 @@
-name: inspec-gcp
+name: inspec-gcp-cis-pci
 title: GCP CIS PCI Helper Resource Pack
 maintainer: Chef Software, Inc.
 summary: This resource pack provides helpers for the Google Cloud Platform CIS PCI profiles.
